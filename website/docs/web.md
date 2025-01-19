@@ -2,6 +2,8 @@
 
 > Check a web demo [here](https://flutter-facebook-auth.web.app/)
 
+🚫 _IMPORTANT:_ this package is not compatible with WASM due to CORS policy conflicts as WASM requires `Cross-Origin-Opener-Policy: same-origin`, while Facebook JS SDK requires `Cross-Origin-Opener-Policy: same-origin-allow-popups`. These cannot be used simultaneously.
+
 🚫 _IMPORTANT:_ the facebook javascript SDK is only allowed to use with `https` but you can test the plugin in your localhost with an error message in your web console.
 
 👉 The `accessToken` method only works in live mode using `https` and you must add your **OAuth redirect URL** in your _facebook developer console_.
